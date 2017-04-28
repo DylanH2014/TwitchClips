@@ -7,31 +7,44 @@ TwitchClips -- Favorite Streamer Moments
 
 @section('content')
 
-<div class="container-fluid">
+<style>
+body {background-color: #9068be;}
+
+</style>
+<div class="container-fluid" style="padding-top: 20px;">
+	<div class="row" {{-- style="background-color: #9068be; min-height: 100%;" --}}>
+
+
+	<div class="col-lg-2 col-xs-2" {{-- style="background-color: #9068be;" --}}></div>
+	<div class="col-lg-8 col-xs-8" style="background-color: #e1e8f0; min-height: 100%; fill: true">
+		<h1 class="text-center" style="padding-bottom: 50px;">Twitch Clips</h1>
+
+
+
 	<div class="row">
-
-	<div class="col-lg-3" style="background-color: #9068be; padding-bottom: 49.5%;"></div>
-	<div class="col-lg-6" style="background-color: #e1e8f0; padding-bottom: 35%;">
-	<h1 class="text-center">Twitch Clips</h1>
-
-
-	<button class="btn">
-     <img src="/images/button3.png" width="200" />
-</button>
-
-	<button id="thing">test</button>
-	<button id="pause">pause</button>
-	<p>teststststs</p>
-	asdas
-	asdas
-	das
-	das
-
+		<div class="col-lg-5 col-xs-4"></div>
+		<button class="btn" id="thing">
+    		<img src="/images/sneaky.jpg" width="200"/>
+		</button>
+	</div>
+	<div class="row" style="padding-bottom: 40%;">
+		<div class="col-lg-5 col-xs-4"></div>
+			<button class="btn btn-primary col-lg-2 col-xs-4" id="pause" style="margin-left: 7px;"><i class="fa fa-pause" aria-hidden="true"></i></button>
+			
+	</div>
 
 	</div>
 
-	<div class="col-lg-3" style="background-color: #9068be; padding-bottom: 49.5%;"></div>
+	<div class="col-lg-2 col-xs-2" {{-- style="background-color: #9068be;" --}}></div>
 
+	
+
+{{--     width: 100%;
+    height: 100%;
+    min-height: 100%;
+    background: red;
+    display: block;
+ --}}
 </div>
 
 </div>
@@ -47,9 +60,10 @@ TwitchClips -- Favorite Streamer Moments
 
 
 	var thing = [
-		'test.mp3',
-		'test2.mp3',
-		'test3.mp3'
+		// 'test.mp3',
+		// 'test2.mp3',
+		// 'test3.mp3',
+		'sneaky1.mp3'
 	];
 
 	$('#thing').on('click', function() {
